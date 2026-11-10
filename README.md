@@ -79,5 +79,23 @@ flavors:
     - Logging Metrics: By logging accuracy or F1-score for each run, you can use the MLflow UI to visualize which parameters are pushing your model toward better performance, allowing you to make data-driven decisions on where to focus your tuning efforts next.
     - Logging Artifacts: You save the specific version of your dataset and the resulting model binary. If a stakeholder asks why a model is performing a certain way six months from now, you can retrieve the exact artifact associated with that experiment.
     - Version Control: By maintaining this record, you ensure that every change you make to your code or configuration is accounted for, preventing the common "it worked on my machine" issue and making your workflow much more professional and scalable.
-    
+
 By treating your experiments this way, you move from manual, disorganized testing to a professional MLOps workflow where every experiment adds value to your knowledge base.
+
+## Tracking UI
+- MLflow experiement 
+    - `mlfow experiements create --experiement-name <experiment-name>`
+    - return an id
+    - now need to collect merrics for the experiemnt
+    - `MLFLOW_EXPERIMENT_ID=2 python produce-metrics.py`
+    - `tree mlruns/`
+
+## Parameters, Version, Artifacts, and Metrics
+
+# MLflow Projects
+
+## Key terms
+- Conda Environment - Specifies the dependencies and software required to recreate the runtime environment
+- Entry Points - Define the scripts that can be executed within the project workflow
+- Git Repository - Remote repository that contains an MLflow project enabling portability
+- mlflow run - Executes an MLflow project locally or from a Git repo with given parameters
