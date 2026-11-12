@@ -1,0 +1,9 @@
+name: learning_rate_fine-tuning
+
+entry_points:
+    main:
+        parameters:
+            channels: {type: int, default: 8}
+            window: {type: int, default: 3}
+            lr: {type: float, default: 0.001}
+        command: "python train.py --channels {channels} --window {window} --lr {lr}"
