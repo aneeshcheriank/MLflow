@@ -1,0 +1,4 @@
+tensorflow
+tensorboard
+# optuna
+numpy
