@@ -99,3 +99,11 @@ By treating your experiments this way, you move from manual, disorganized testin
 - Entry Points - Define the scripts that can be executed within the project workflow
 - Git Repository - Remote repository that contains an MLflow project enabling portability
 - mlflow run - Executes an MLflow project locally or from a Git repo with given parameters
+
+## Summary
+
+- MLflow Projects are a format for packaging data science code to run it in a reproducible and reusable way. They consist of code, its dependencies, and metadata.
+- Projects can specify details like name, environments, parameters, and entry points in a MLproject file. Otherwise, conventions are used to infer these. 
+- Projects can be run locally or remotely using mlflow run. Additional parameters, arguments, and flags can configure the runs.
+- MLflow Projects make iterating quickly easier. They also enable constructing multi-step workflows by calling mlflow.projects.run() in a program.
+- Use cases include modularizing code, hyperparameter tuning, cross-validation, and packaging existing code.
